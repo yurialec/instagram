@@ -8,16 +8,12 @@ export default function Navbar() {
         <nav className="sticky top-0 w-full border border-b-1 z-50">
             <div className="container max-w-xl">
                 <div className="flex flex-row py-1 items-center">
-
-                    <div className="basis-1/3">
-                        <img
-                            className=""
-                            src={Logo}
-                            alt="Logo"
-                            width="120"
-                        />
-                    </div>
-
+                    <img
+                        className=""
+                        src={Logo}
+                        alt="Logo"
+                        width={120}
+                    />
                     <div className="basis-1/3">
                         <div className="relative">
                             <FontAwesomeIcon
@@ -68,17 +64,14 @@ export default function Navbar() {
                                     />
                                 </a>
                             </li>
-                            <li>
-                                <a className="cursor-pointer">
-                                    <img
-                                    className="rounded-full w-6"
-                                    src={UserProfile}
-                                    alt="User Profile"/>
-                                </a>
-                            </li>
                         </ul>
                     </div>
-
+                        <img
+                            className=""
+                            src={UserProfile}
+                            alt="User Profile"
+                            width="30"
+                        />
                 </div>
             </div>
         </nav>
