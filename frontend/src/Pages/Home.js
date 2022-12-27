@@ -1,3 +1,4 @@
+import BasicProfile from "../components/BasicProfile";
 import Stories from "../components/Stories";
 
 export default function Home() {
@@ -8,7 +9,11 @@ export default function Home() {
                 <div className="md:px-12 lg:px col-span-3 lg:col-span-2">
                     <Stories />
                 </div>
-                <div className="col-spa-1 hidden lg:block">Sidebar</div>
+                <div className="col-spa-1 hidden lg:block">
+                    <div className="fixed p-5 w-80">
+                        <BasicProfile />
+                    </div>
+                </div>
             </main>
         </div>
     );
