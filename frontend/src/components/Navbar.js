@@ -70,7 +70,7 @@ export default function Navbar() {
                             className=""
                             src={UserProfile}
                             alt="User Profile"
-                            width="30"
+                            width="25"
                         />
                 </div>
             </div>
