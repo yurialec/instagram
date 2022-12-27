@@ -1,4 +1,5 @@
 import BasicProfile from "../components/BasicProfile";
+import Footer from "../components/Footer";
 import Stories from "../components/Stories";
 import Suggestions from "../components/Suggestions";
 
@@ -14,9 +15,10 @@ export default function Home() {
                     <div className="fixed p-5 w-80">
                         <BasicProfile />
                         <Suggestions />
+                        <Footer />
                     </div>
                 </div>
             </main>
         </div>
     );
-}
+} 
