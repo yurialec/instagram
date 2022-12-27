@@ -1,4 +1,6 @@
+import BasicProfile from "../components/BasicProfile";
 import Stories from "../components/Stories";
+import Suggestions from "../components/Suggestions";
 
 export default function Home() {
 
@@ -8,7 +10,12 @@ export default function Home() {
                 <div className="md:px-12 lg:px col-span-3 lg:col-span-2">
                     <Stories />
                 </div>
-                <div className="col-spa-1 hidden lg:block">Sidebar</div>
+                <div className="col-spa-1 hidden lg:block">
+                    <div className="fixed p-5 w-80">
+                        <BasicProfile />
+                        <Suggestions />
+                    </div>
+                </div>
             </main>
         </div>
     );
