@@ -5,7 +5,7 @@ import UserProfile from '../images/UserProfile.jpg'
 export default function Navbar() {
 
     return (
-        <nav className="sticky top-0 w-full border border-b-1 z-50">
+        <nav className="sticky top-0 w-full border border-b-1 z-50 bg-white">
             <div className="container max-w-xl">
                 <div className="flex flex-row py-1 items-center">
                     <img
