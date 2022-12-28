@@ -1,3 +1,4 @@
+import Highlights from "../components/Highlights";
 import ProfileHeader from "../components/ProfileHeader";
 
 export default function Profile() {
@@ -5,6 +6,7 @@ export default function Profile() {
         <div className="container pt-8 max-w-5xl">
             <main className="bg-slate-50">
                 <ProfileHeader />
+                <Highlights />
             </main>
         </div>
     );
