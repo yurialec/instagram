@@ -7,6 +7,7 @@ import { faRectangleList, fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-solid-svg-icons';
 import Stories from './components/Stories';
 import Home from './Pages/Home';
+import Profile from './Pages/Profile';
 
 library.add(fas, faRectangleList)
 
@@ -14,7 +15,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home />
+      {/* <Home /> */}
+      <Profile />
     </>
   );
 }

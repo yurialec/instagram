@@ -12,6 +12,8 @@ export default function Home() {
                 <div className="md:px-12 lg:px col-span-3 lg:col-span-2">
                     <Stories />
                     <Posts />
+                    <Posts />
+                    <Posts />
                 </div>
                 <div className="col-spa-1 hidden lg:block">
                     <div className="fixed p-5 w-80">
