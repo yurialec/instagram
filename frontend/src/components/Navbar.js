@@ -14,7 +14,7 @@ export default function Navbar() {
                         alt="Logo"
                         width={120}
                     />
-                    <div className="basis-1/3">
+                    <div className="basis-1/3 hidden md:block">
                         <div className="relative">
                             <FontAwesomeIcon
                                 icon="magnifying-glass"
@@ -67,7 +67,7 @@ export default function Navbar() {
                         </ul>
                     </div>
                         <img
-                            className=""
+                            className="rounded-full w-6 w-full"
                             src={UserProfile}
                             alt="User Profile"
                             width="25"
