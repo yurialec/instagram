@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logo from '../images/logo.png'
 import UserProfile from '../images/UserProfile.jpg'
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
 
@@ -8,12 +9,14 @@ export default function Navbar() {
         <nav className="sticky top-0 w-full border border-b-1 z-50 bg-white">
             <div className="container max-w-xl">
                 <div className="flex flex-row py-1 items-center">
-                    <img
-                        className=""
-                        src={Logo}
-                        alt="Logo"
-                        width={120}
-                    />
+                    <Link to="/">
+                        <img
+                            className=""
+                            src={Logo}
+                            alt="Logo"
+                            width={120}
+                        />
+                    </Link>
                     <div className="basis-1/3 hidden md:block">
                         <div className="relative">
                             <FontAwesomeIcon
@@ -32,9 +35,9 @@ export default function Navbar() {
                     <div className="basis-1/3">
                         <ul className="flex flex-row space-x-4 p-2 text-2xl justify-end items-center">
                             <li>
-                                <a className="cursor-pointer">
+                                <Link to="/">
                                     <FontAwesomeIcon icon="house" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a className="cursor-pointer">
@@ -66,12 +69,13 @@ export default function Navbar() {
                             </li>
                         </ul>
                     </div>
+                    <Link to="/yuri_alec">
                         <img
-                            className="rounded-full w-6 w-full"
+                            className="rounded-full w-25 w-full"
                             src={UserProfile}
                             alt="User Profile"
-                            width="25"
                         />
+                    </Link>
                 </div>
             </div>
         </nav>

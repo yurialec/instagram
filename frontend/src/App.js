@@ -9,14 +9,35 @@ import Stories from './components/Stories';
 import Home from './Pages/Home';
 import Profile from './Pages/Profile';
 
+import { Routes, Route } from 'react-router-dom';
+
 library.add(fas, faRectangleList)
 
 function App() {
   return (
     <>
-      <Navbar />
-      {/* <Home /> */}
-      <Profile />
+      <Routes>
+        <Route
+          path="/"
+          exact
+          element={
+            <>
+              <Navbar />
+              <Home />
+            </>
+          }>
+        </Route>
+        <Route
+          path="/yuri_alec"
+          exact
+          element={
+            <>
+              <Navbar />
+              <Profile />
+            </>
+          }>
+        </Route>
+      </Routes>
     </>
   );
 }
