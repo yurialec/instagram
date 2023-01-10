@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import UserProfile from '../images/UserProfile.jpg'
 
-export default function ProfileHeader() {
+export default function ProfileHeader( props ) {
     return (
         <div className="grid grid-cols-3 mb-10">
             <div className="bg-green p-3 rounded flex items-start justify-center">
@@ -17,9 +18,23 @@ export default function ProfileHeader() {
                     <h1 className='inline-block text-3xl align-bottom block'>
                         User369852
                     </h1>
-                    <button className='bg-white ml-3 text-gray-800 font-semibold py-1 px-2 border border-gray-400 rounded text-sm'>Edit Profile</button>
-                    <a className='ml-3' href=''>
-                        <FontAwesomeIcon icon="gear" className='text-2xl leading-6' />
+                    <Link
+                        as="button"
+                        to="/accounts/edit"
+                        className="bg-white ml-3  text-gray-800 font-semibold py-1 px-2 border border-gray-400 rounded text-sm"
+                    >
+                        Edit Profile
+                    </Link>
+                    <a
+                        className="ml-3 cursor-pointer"
+                        onClick={() =>
+                            props.setIsSettingsModalOpen(true)
+                        }
+                    >
+                        <FontAwesomeIcon
+                            icon="gear"
+                            className="text-2xl leading-6"
+                        />
                     </a>
                 </div>
                 <div className="flex-row py-5 max-w-sm hidden lg:flex">
