@@ -48,10 +48,12 @@ function App() {
           }>
         </Route>
       </Routes>
+
       <ModalSettings
         open={isSettingsModalOpen}
         setOpen={setIsSettingsModalOpen}
       />
+      
     </>
   );
 }

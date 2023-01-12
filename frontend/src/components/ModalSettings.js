@@ -11,6 +11,44 @@ function ModalSettings(props) {
                         Change Password
                     </a>
                 </li>
+                <li>
+                    <a href="#" className="border-b text-center py-3 block">
+                        Nametag
+                    </a>
+                </li>
+                <li>
+                    <a href="#" className="border-b text-center py-3 block">
+                        Apps and Websites
+                    </a>
+                </li>
+                <li>
+                    <a href="#" className="border-b text-center py-3 block">
+                        Notifications
+                    </a>{" "}
+                </li>
+                <li>
+                    <a href="#" className="border-b text-center py-3 block">
+                        Edit Profile
+                    </a>{" "}
+                </li>
+                <li>
+                    <a href="#" className="border-b text-center py-3 block">
+                        Report a Problem
+                    </a>
+                </li>
+                <li>
+                    <a href="#" className="border-b text-center py-3 block">
+                        Log Out
+                    </a>
+                </li>
+                <li>
+                    <a
+                        onClick={() => props.setOpen(false)}
+                        className="border-b text-center py-3 block cursor-pointer"
+                    >
+                        Cancel
+                    </a>
+                </li>
             </ul>
         </Modal>
     );
