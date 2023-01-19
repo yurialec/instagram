@@ -1,5 +1,6 @@
 import BasicProfile from "../components/BasicProfile";
 import Footer from "../components/Footer";
+import Posts from "../components/Posts";
 import Stories from "../components/Stories";
 import Suggestions from "../components/Suggestions";
 
@@ -10,6 +11,9 @@ export default function Home() {
             <main className="grid grid-cols-3">
                 <div className="md:px-12 lg:px col-span-3 lg:col-span-2">
                     <Stories />
+                    <Posts />
+                    <Posts />
+                    <Posts />
                 </div>
                 <div className="col-spa-1 hidden lg:block">
                     <div className="fixed p-5 w-80">
