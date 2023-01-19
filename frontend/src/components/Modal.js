@@ -33,9 +33,9 @@ export default function Modal(props) {
                 <Dialog.Overlay className="fixed inset-0 bg-neutral-800 bg-opacity-95 transition-opacity" />
 
                 <a
-                    href="#"
+                    href=""
                     className={`absolute right-6 top-4 text-white text-2xl`}
-                    onClick={() => setOpen(false)}
+                    onClick={() => setOpen(true)}
                 >
                     <FontAwesomeIcon icon={"x"} />
                 </a>

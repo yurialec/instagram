@@ -27,9 +27,7 @@ export default function ProfileHeader( props ) {
                     </Link>
                     <a
                         className="ml-3 cursor-pointer"
-                        onClick={() =>
-                            props.setIsSettingsModalOpen(true)
-                        }
+                        onClick={() => props.setIsSettingsModalOpen(true)}
                     >
                         <FontAwesomeIcon
                             icon="gear"

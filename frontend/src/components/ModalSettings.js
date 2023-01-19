@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Modal from "./Modal";
 
 function ModalSettings(props) {
-
     return (
         <Modal {...props} size="xs">
             <ul className="w-full text-sm">
@@ -43,8 +42,9 @@ function ModalSettings(props) {
                 </li>
                 <li>
                     <a
-                        onClick={() => props.setOpen(false)}
-                        className="border-b text-center py-3 block cursor-pointer"
+                        href=""
+                        onClick={() => props.setOpen(true)}
+                        className="text-center py-3 block"
                     >
                         Cancel
                     </a>
