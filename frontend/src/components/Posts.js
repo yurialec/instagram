@@ -1,18 +1,24 @@
+import { useState } from 'react';
 import UserProfile from '../images/UserProfile.jpg'
 import Photo from '../images/photo-01.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ModalPostActions from './ModalPostActions';
-import { useState } from 'react';
+import ModalPost from './ModalPost'
 
 export default function Posts() {
 
     const [isModalOpen, setModalOpen] = useState(false);
+    const [isPostModalOpen, setPostModalOpen] = useState(false);
 
     return (
         <>
             <ModalPostActions
                 open={isModalOpen}
                 setOpen={setModalOpen}
+            />
+            <ModalPost
+                open={isPostModalOpen}
+                setOpen={setPostModalOpen}
             />
 
             <div className="border rounded-lg border-slate-200 mb-5 bg-white">
@@ -48,7 +54,10 @@ export default function Posts() {
                         <a className='mr-3 text-red-600 cursor-pointer' href=''>
                             <FontAwesomeIcon icon="heart" />
                         </a>
-                        <a className='mr-3 text-grey-500 cursor-pointer' href=''>
+                        <a
+                            className='mr-3 hover:text-gray cursor-pointer'
+                            onClick={() => setPostModalOpen(true)}
+                        >
                             <FontAwesomeIcon icon={['fa', 'comment']} />
                         </a>
                         <a className='mr-10 cursor-pointer hover:text-gray-500' href=''>
