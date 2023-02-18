@@ -121,7 +121,7 @@ function ModalPostActions(props) {
                                         className="text-sky-500 font-medium"
                                         href="#"
                                     >
-                                        Post
+                                        TESTE
                                     </a>
                                 </div>
                             </div>
