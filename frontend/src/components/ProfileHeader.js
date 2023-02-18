@@ -16,7 +16,7 @@ export default function ProfileHeader( props ) {
             <div className='p-3 text-gray-600 cols-span-2'>
                 <div className='flex items-center'>
                     <h1 className='inline-block text-3xl align-bottom block'>
-                        User369852
+                        yuri_alec
                     </h1>
                     <Link
                         as="button"
