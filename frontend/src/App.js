@@ -26,6 +26,13 @@ function App() {
     <>
       <Routes>
         <Route
+          path="/accounts/login"
+          exact
+          element={
+            <Login />
+          }>
+        </Route>
+        <Route
           path="/"
           exact
           element={
@@ -55,7 +62,7 @@ function App() {
         open={isSettingsModalOpen}
         setOpen={setIsSettingsModalOpen}
       />
-      
+
     </>
   );
 }
