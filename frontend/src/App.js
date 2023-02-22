@@ -5,16 +5,18 @@ import './App.css';
 import Navbar from './components/Navbar';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faRectangleList, fas } from '@fortawesome/free-solid-svg-icons';
-import { far } from '@fortawesome/free-solid-svg-icons';
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
 import Stories from './components/Stories';
 import Home from './Pages/Home';
 import Profile from './Pages/Profile';
 
 import { Routes, Route } from 'react-router-dom';
 import ModalSettings from './components/ModalSettings';
+import Login from './Pages/Login';
 
-library.add(fas, faRectangleList)
+library.add(fab, fas, far);
 
 function App() {
 
