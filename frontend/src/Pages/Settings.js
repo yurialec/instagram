@@ -38,7 +38,7 @@ export default function Settings(props) {
                                 }`}
                             to="help"
                         >
-                            Help
+                            Help!
                         </Link>
                     </li>
                 </ul>
