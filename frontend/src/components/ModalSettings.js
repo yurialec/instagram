@@ -6,7 +6,7 @@ function ModalSettings(props) {
         <Modal {...props} size="xs">
             <ul className="w-full text-sm">
                 <li>
-                    <a href="#" className="border-b text-center py-3 block">
+                    <a href="/accounts/password" className="border-b text-center py-3 block">
                         Change Password
                     </a>
                 </li>
@@ -26,7 +26,7 @@ function ModalSettings(props) {
                     </a>{" "}
                 </li>
                 <li>
-                    <a href="#" className="border-b text-center py-3 block">
+                    <a href="/accounts/edit" className="border-b text-center py-3 block">
                         Edit Profile
                     </a>{" "}
                 </li>
@@ -36,7 +36,7 @@ function ModalSettings(props) {
                     </a>
                 </li>
                 <li>
-                    <a href="#" className="border-b text-center py-3 block">
+                    <a href="/accounts/login" className="border-b text-center py-3 block">
                         Log Out
                     </a>
                 </li>

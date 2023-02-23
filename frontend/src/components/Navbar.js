@@ -157,7 +157,7 @@ export default function Navbar() {
                                     <Menu.Item>
                                         {({ active }) => (
                                             <Link
-                                                to={"/yuri_alec"}
+                                                to={"/accounts/login"}
                                                 className={`${classNames(active
                                                     ? 'bg-gray-100 text-gray-900'
                                                     : 'text-gray-700'
