@@ -39,7 +39,7 @@ export default function Login(props) {
                                 Log in
                             </button>
                             <div className="text-sm text-center text-red-500 absolute bottom-20 px-8">
-                                Sorry, your email/password was incorrect. Please double-check and rty again.
+                                Sorry, your email/password was incorrect. Please double-check and try again.
                             </div>
                         </form>
                     </div>
