@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Iphone from '../images/Iphone.png'
 import Logo from '../images/logo.png'
 
@@ -35,9 +36,13 @@ export default function Login(props) {
                                 value={password}
                                 placeholder="Password"
                             />
-                            <button className="text-sm text-center bg-blue-300 text-white py-1 rounded font-medium">
+                            <Link
+                                className="text-sm text-center bg-blue-300 text-white py-1 rounded font-medium"
+                                as="button"
+                                to="/"
+                            >
                                 Log in
-                            </button>
+                            </Link>
                             <div className="text-sm text-center text-red-500 absolute bottom-20 px-8">
                                 Sorry, your email/password was incorrect. Please double-check and try again.
                             </div>
