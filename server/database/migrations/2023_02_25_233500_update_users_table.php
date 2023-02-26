@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('bio')->after('image');
             $table->string('website')->after('bio');
             $table->string('phone')->after('website');
-            $table->string('password')->after('phone');
         });
     }
 
