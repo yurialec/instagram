@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use App\Models\Post;
+use App\Models\UserFollower;
 
 class User extends Authenticatable
 {
@@ -48,7 +49,18 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function posts(){
+    public function posts()
+    {
         return $this->hasMany(Post::class);
+    }
+
+    public function followers()
+    {
+        return $this->hasMany(UserFollower::class);
+    }
+
+    public function following()
+    {
+        return $this->hasMany(UserFollower::class, 'follower_id', 'id');
     }
 }
